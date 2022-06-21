@@ -1,5 +1,5 @@
 # Shopping Cart
-###### Click each card once as it reshuffles
+###### Add items to your shopping cart
 ![](https://github.com/TYLPHE/TYLPHE/blob/main/readmeAssets/shopping-cart.gif)
 
 ## Links
