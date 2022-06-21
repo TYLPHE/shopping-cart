@@ -8,7 +8,7 @@
 - [Link to the Assignment](https://www.theodinproject.com/lessons/node-path-javascript-shopping-cart)
 
 ## Features
-- navigate between homepage and shopping page
+- Navigate between homepage and shopping page
 - Add items to your shopping cart and see its total
 
 ## About
