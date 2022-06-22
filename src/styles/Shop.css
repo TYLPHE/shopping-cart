@@ -1,0 +1,11 @@
+.logo {
+  text-decoration: none;
+  color: white;
+}
+.shop-body {
+  display: flex;
+}
+.shop-window {
+  display: flex;
+  width: 100%;
+}
