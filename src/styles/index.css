@@ -1,25 +1,14 @@
-* {
+/* * {
   border: 1px solid;
   box-sizing: border-box;
-}
+} */
 body {
   background-color: black;
   color: white;
   margin: 0;
-  height: 100vh;
-}
-a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
 }
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.flex-dir-col {
-  flex-direction: column;
 }
