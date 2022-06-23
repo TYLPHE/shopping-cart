@@ -3,7 +3,7 @@ import './styles/Header.css';
 function Header() {
   return(
     <header>
-      <Link to='/shopping-cart/'>
+      <Link className='header-title' to='/shopping-cart/'>
         <div className='logo'>Shopping Cart by TYLPHE</div>
       </Link>
       <span className="material-symbols-outlined">shopping_cart</span>

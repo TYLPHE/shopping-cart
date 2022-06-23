@@ -4,6 +4,9 @@
 }
 .shop-body {
   display: flex;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 .shop-cont {
   width: 100%;

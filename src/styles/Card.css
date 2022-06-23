@@ -1,9 +1,10 @@
 input[type='number'] {
   width: 3rem;
   border: none;
-  background-color: rgba(255, 255, 255, 0.219);
+  background-color: rgba(255, 255, 255, 0.144);
   color: white;
   text-align: center;
+  text-shadow: -1px .5px 1px black;
 }
 .card {
   display: flex;
@@ -11,7 +12,7 @@ input[type='number'] {
   padding: 10px;
 }
 .card:hover{
-  background-color: rgba(255, 255, 255, 0.11);
+  background-color: rgba(255, 255, 255, 0.062);
   transition: 100ms;
 }
 .card-details {
@@ -19,4 +20,8 @@ input[type='number'] {
   flex-direction: column;
   justify-content: space-around;
   width: 200px;
+}
+.card-name {
+  text-align: center;
+  font-weight: bold;
 }

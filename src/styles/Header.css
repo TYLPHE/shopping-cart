@@ -1,6 +1,6 @@
 header {
   display: flex;
-  background-color: blue;
+  background-color: #1A1A1A;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
@@ -13,4 +13,7 @@ header {
   font-size: 2rem;
   height: 2rem;
   width: 2rem;
+}
+.header-title {
+  text-decoration: none;
 }

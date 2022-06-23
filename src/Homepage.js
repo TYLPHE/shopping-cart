@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
 import './styles/Homepage.css';
 import gif from './images/homepage.gif';
-import jpg from './images/inscryption.jpg'
+import jpg from './images/inscryption.jpg';
+import long from './images/long.gif';
 import { useEffect, useState } from 'react';
 
 function Homepage() {
-  const [bg, setBg] = useState(gif);
-  useEffect(() => {
-    const timer = setTimeout(() => setBg(jpg), 2050);
-    return () => clearTimeout(timer);
-  }, []);
+  // const [bg, setBg] = useState(gif);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => setBg(jpg), 2050);
+  //   return () => clearTimeout(timer);
+  // }, []);
   
   return (
     <Link 
@@ -18,7 +19,7 @@ function Homepage() {
     >
       <div
         className='center home-body'
-        style={{backgroundImage: `url(${bg})`}}
+        style={{backgroundImage: `url(${long})`}}
       />
     </Link>  
   );
