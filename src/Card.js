@@ -1,13 +1,15 @@
 import './styles/Card.css';
 function Card({ inventory }) {
-  // console.log(inventory)
   return (
     <div className='card'>
       <img alt='test' src={inventory.img} />
       <div className='card-details'>
         <div className='card-name'>{inventory.name}</div>
         <div>{inventory.desc}</div>
-        <div>Teeth/ea: {inventory.teeth}</div>
+        <div className='price-tag'>
+          <span>Teeth: &nbsp; </span>
+          <span className='price'>{inventory.teeth}</span>
+        </div>
         <div>
           <label htmlFor={`${inventory.name}`}>Qty: &nbsp;</label>
           <input 

@@ -1,3 +1,4 @@
+
 .sidebar {
   min-width: 265px;
   user-select: none;
@@ -7,5 +8,8 @@
 }
 .label-filter {
   display: inline-block;
-  width: 80%
+  width: 90%
+}
+.label-filter:hover {
+  background-color: #ffffff25;
 }

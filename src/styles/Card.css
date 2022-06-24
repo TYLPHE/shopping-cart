@@ -1,7 +1,7 @@
 input[type='number'] {
   width: 3rem;
   border: none;
-  background-color: rgba(255, 255, 255, 0.144);
+  background-color: #ffffff25;
   color: white;
   text-align: center;
   text-shadow: -1px .5px 1px black;
@@ -24,4 +24,11 @@ input[type='number'] {
 .card-name {
   text-align: center;
   font-weight: bold;
+}
+.price-tag {
+  display: flex;
+  align-items: center;
+}
+.price {
+  font-size: 1.5rem;
 }

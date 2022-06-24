@@ -9,7 +9,7 @@ function ShopWindow() {
   let arr = [];
   for (let i = 0; i < inventory.length; i += 1) {
     let card = (
-      <Card inventory={inventory[i]} />
+      <Card key={inventory[i].name} inventory={inventory[i]} />
     )
     arr.push(card)
   }
@@ -18,7 +18,7 @@ function ShopWindow() {
 
 function Shop() {
   return (
-    <div>
+    <div className='main-window'>
       <Header />
       <div className='shop-body' style={{backgroundImage: `url(${shopBg})`}}>
         <Sidebar />

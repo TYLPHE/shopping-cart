@@ -5,7 +5,7 @@ function Tribe() {
   const arr = [];
   for (let i = 0; i < types.length; i += 1) {
     const div = (
-      <div>
+      <div key={types[i]}>
         <input type={`checkbox`} id={types[i]} name='tribe' />
         <label className={'label-filter'} htmlFor={types[i]}>{types[i]}</label>
       </div>
@@ -19,7 +19,7 @@ function Teeth() {
   const arr = [];
   for (let i = 0; i <= 7; i += 1) {
     const div = (
-      <div>
+      <div key={`teeth${i}`}>
         <input type={`checkbox`} id={`teeth${i}`} name='teeth' />
         <label className={'label-filter'} htmlFor={`teeth${i}`}>{i}</label>
       </div>
@@ -33,7 +33,7 @@ function Health() {
   const arr = [];
   for (let i = 0; i <= 7; i += 1) {
     const div = (
-      <div>
+      <div key={`health${i}`}>
         <input type={`checkbox`} id={`health${i}`} name='health' />
         <label className={'label-filter'} htmlFor={`health${i}`}>{i}</label>
       </div>
@@ -47,7 +47,7 @@ function Power() {
   const arr = [];
   for (let i = 0; i <= 7; i += 1) {
     const div = (
-      <div>
+      <div key={`power${i}`}>
         <input type={`checkbox`} id={`power${i}`} name='power' />
         <label className={'label-filter'} htmlFor={`power${i}`}>{i}</label>
       </div>
@@ -61,7 +61,7 @@ function Cost() {
   const arr = [];
   for (let i = 0; i <= 8; i += 1) {
     const div = (
-      <div>
+      <div key={`cost${i}`}>
         <input type={`checkbox`} id={`cost${i}`} name='cost' />
         <label className={'label-filter'} htmlFor={`cost${i}`}>{i}</label>
       </div>
@@ -76,7 +76,7 @@ function CostType() {
   const arr = [];
   for (let i = 0; i < types.length; i += 1) {
     const div = (
-      <div>
+      <div key={`costType${i}`}>
         <input type={`checkbox`} id={`costType${i}`} name='costType' />
         <label className={'label-filter'} htmlFor={`costType${i}`}>{types[i]}</label>
       </div>

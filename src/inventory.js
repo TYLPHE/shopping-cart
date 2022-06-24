@@ -1,186 +1,74 @@
-import kingfisher from './images/kingfisher.png';
-import ravenEgg from './images/raven-egg.png';
-import sparrow from './images/sparrow.png';
-import magpie from './images/magpie.png';
-import raven from './images/raven.png';
-import turkeyVulture from './images/turkey-vulture.png';
-import stuntedWolf from './images/stunted-wolf.png';
-import wolfCub from './images/wolf-cub.png';
-import bloodhound from './images/bloodhound.png';
-import wolf from './images/wolf.png';
-import coyote from './images/coyote.png';
+import adder from './images/adder.png';
 import alpha from './images/alpha.png';
-import child13 from './images/child-13.png';
-import longElk from './images/long-elk.png';
-import blackGoat from './images/black-goat.png';
-import elkFawn from './images/elk-fawn.png';
-import elk from './images/elk.png';
-import pronghorn from './images/pronghorn.png';
-import mooseBuck from './images/moose-buck.png';
-import mantisGod from './images/mantis-god.png';
-import strangeLarva from './images/strange-larva.png';
+import amalgam from './images/amalgam.png';
+import amoeba from './images/amoeba.png';
+import antQueen from './images/ant-queen.png';
+import bat from './images/bat.png';
+import beaver from './images/beaver.png';
 import bee from './images/bee.png';
 import beehive from './images/beehive.png';
-import mantis from './images/mantis.png';
-import ringWorm from './images/ring-worm.png';
-import workerAnt from './images/worker-ant.png';
-import antQueen from './images/ant-queen.png';
-import stinkbug from './images/stinkbug.png';
+import blackGoat from './images/black-goat.png';
+import bloodhound from './images/bloodhound.png';
+import bullfrog from './images/bullfrog.png';
+import cat from './images/cat.png';
+import child13 from './images/child-13.png';
 import cockroach from './images/cockroach.png';
 import corpseMaggots from './images/corpse-maggots.png';
-import geck from './images/geck.png';
-import ouroboros from './images/ouroboros.png';
-import bullfrog from './images/bullfrog.png';
-import skink from './images/skink.png';
-import adder from './images/adder.png';
-import riverSnapper from './images/river-snapper.png';
-import rattler from './images/rattler.png';
-import moleMan from './images/mole-man.png';
-import Amalgam from './images/amalgam.png';
-import packRat from './images/pack-rat.png';
-import theDaus from './images/the-daus.png';
-import urayuli from './images/urayuli.png';
-import amoeba from './images/amoeba.png';
-import squirrel from './images/squirrel.png';
-import cat from './images/cat.png';
-import mole from './images/mole.png';
-import porcupine from './images/porcupine.png';
-import riverOtter from './images/river-otter.png';
-import skunk from './images/skunk.png';
-import stoat from './images/stoat.png';
-import warren from './images/warren.png';
-import beaver from './images/beaver.png';
+import coyote from './images/coyote.png';
+import elk from './images/elk.png';
+import elkFawn from './images/elk-fawn.png';
 import fieldMice from './images/field-mice.png';
-import ratKing from './images/rat-king.png';
-import bat from './images/bat.png';
-import opossum from './images/opossum.png';
-import grizzly from './images/grizzly.png';
+import geck from './images/geck.png';
 import greatWhite from './images/great-white.png';
+import grizzly from './images/grizzly.png';
+import kingfisher from './images/kingfisher.png';
+import longElk from './images/long-elk.png';
+import magpie from './images/magpie.png';
+import mantis from './images/mantis.png';
+import mantisGod from './images/mantis-god.png';
+import mole from './images/mole.png';
+import moleMan from './images/mole-man.png';
+import mooseBuck from './images/moose-buck.png';
+import opossum from './images/opossum.png';
+import ouroboros from './images/ouroboros.png';
+import packRat from './images/pack-rat.png';
+import porcupine from './images/porcupine.png';
+import pronghorn from './images/pronghorn.png';
+import ratKing from './images/rat-king.png';
+import rattler from './images/rattler.png';
+import raven from './images/raven.png';
+import ravenEgg from './images/raven-egg.png';
+import ringWorm from './images/ring-worm.png';
+import riverOtter from './images/river-otter.png';
+import riverSnapper from './images/river-snapper.png';
+import skink from './images/skink.png';
+import skunk from './images/skunk.png';
+import sparrow from './images/sparrow.png';
+import squirrel from './images/squirrel.png';
+import stinkbug from './images/stinkbug.png';
+import stoat from './images/stoat.png';
+import strangeLarva from './images/strange-larva.png';
+import stuntedWolf from './images/stunted-wolf.png';
+import theDaus from './images/the-daus.png';
+import turkeyVulture from './images/turkey-vulture.png';
+import urayuli from './images/urayuli.png';
+import warren from './images/warren.png';
+import wolf from './images/wolf.png';
+import wolfCub from './images/wolf-cub.png';
+import workerAnt from './images/worker-ant.png';
 
 const inventory = [
-  // avian
+  // A
   {
-    name: 'Kingfisher',
-    desc: 'The adept Kingfisher. A slippery hunter.',
-    tribe: 'Avian',
-    teeth: 3,
-    health: 1,
-    power: 1,
-    cost: 1,
-    type: 'blood',
-    img: kingfisher,
-  },
-  {
-    name: 'Raven Egg',
-    desc: 'A Nascent Raven. It is no less connivin in its incubation.',
-    tribe: 'Avian',
-    teeth: 3,
-    health: 2,
-    power: 0,
-    cost: 1,
-    type: 'blood',
-    img: ravenEgg,
-  },
-  {
-    name: 'Raven',
-    desc: 'The conniving Raven. A blight upon the skies.',
-    tribe: 'Avian',
-    teeth: 4,
-    health: 3,
-    power: 2,
-    cost: 2,
-    type: 'blood',
-    img: raven,
-  },
-  {
-    name: 'Sparrow',
-    desc: 'The Meek Sparrow. An inexpensive, if feeble, flying creature.',
-    tribe: 'Avian',
-    teeth: 3,
-    health: 2,
-    power: 1,
-    cost: 1,
-    type: 'blood',
-    img: sparrow,
-  },
-  {
-    name: 'Magpie',
-    desc: 'The covetous Magpie. It can fetch any card in your deck.',
-    tribe: 'Avian',
+    name: 'Adder',
+    desc: 'The caustic Adder. Damage from its poison bite is always lethal.',
+    tribe: 'Reptile',
     teeth: 4,
     health: 1,
     power: 1,
     cost: 2,
     type: 'blood',
-    img: magpie,
-  },
-  {
-    name: 'Turkey Vulture',
-    desc: 'The pernicious Vulture. A tyrant of the skies.',
-    tribe: 'Avian',
-    teeth: 4,
-    health: 3,
-    power: 3,
-    cost: 8,
-    type: 'bone',
-    img: turkeyVulture,
-  },
-
-  // Canine
-  {
-    name: 'Stunted Wolf',
-    desc: 'Take the film roll. Before he sees it! NOW!',
-    tribe: 'Canine',
-    teeth: 5,
-    health: 2,
-    power: 2, 
-    cost: 1,
-    type: 'blood',
-    img: stuntedWolf,
-  },
-  {
-    name: 'Wolf Cub',
-    desc: 'The young Wolf Cub. It grows into a Wolf after a single turn.',
-    tribe: 'Canine',
-    teeth: 5,
-    health: 1,
-    power: 1,
-    cost: 1,
-    type: 'blood',
-    img: wolfCub,
-  },
-  {
-    name: 'Wolf',
-    desc: 'The proud Wolf. A vicious contender.',
-    tribe: 'Canine',
-    teeth: 4,
-    health: 2,
-    power: 3,
-    cost: 2,
-    type: 'blood',
-    img: wolf,
-  },
-  {
-    name: 'Bloodhound',
-    desc: 'The dauntless bloodhound. It leaps to oppose new creatures when they are played.',
-    tribe: 'Canine',
-    teeth: '2',
-    health: 3,
-    power: 2,
-    cost: 2,
-    type: 'blood',
-    img: bloodhound,
-  },
-  {
-    name: 'Coyote',
-    desc: 'The meager Coyote. But what did you expect for only four bones?',
-    tribe: 'Canine',
-    teeth: 3,
-    health: 1,
-    power: 2,
-    cost: 4,
-    type: 'bone',
-    img: coyote,
+    img: adder,
   },
   {
     name: 'Alpha',
@@ -193,110 +81,66 @@ const inventory = [
     type: 'bone',
     img: alpha,
   },
-  // Hooved
   {
-    name: 'Child 13',
-    desc: 'Poor abandoned child. It does not die when sacrificed... but do you have the heart to try?',
-    tribe: 'Hooved',
-    teeth: 6,
-    health: 1,
-    power: 0,
-    cost: 1,
+    name: 'Amalgam', 
+    desc: 'Canine. Hooved. Reptilian. Feathered. Insectoid. The Amalgam is all.',
+    tribe: 'Misc',
+    teeth: 5,
+    health: 3,
+    power: 3,
+    cost: 2,
     type: 'blood',
-    img: child13,
+    img: amalgam,
   },
   {
-    name: 'Long Elk',
-    desc: 'I have no words for this freak of nature',
-    tribe: 'Hooved',
+    name: 'Amoeba',
+    desc: 'The amorphous Amoeba. Its sigils are ever changing.',
+    tribe: 'Misc',
     teeth: 5,
     health: 2,
     power: 1,
+    cost: 2,
+    type: 'bone',
+    img: amoeba,
+  },
+  {
+    name: 'Ant Queen',
+    desc: 'The Regal Ant Queen. She births a new Ant once played.',
+    tribe: 'Insect',
+    teeth: 3,
+    health: 3,
+    power: 'Ant',
+    cost: 2,
+    type: 'blood',
+    img: antQueen,
+  },
+
+  // B
+  {
+    name: 'Bat',
+    desc: 'The meddlesome Bat. A minor terror.',
+    tribe: 'Misc',
+    teeth: 3,
+    health: 1,
+    power: 2,
     cost: 4,
     type: 'bone',
-    img: longElk,
+    img: bat,
   },
   {
-    name: 'Black Goat',
-    desc: 'The apotheosized Goat. The truest offering. Sacrificing it grants three blood.',
-    tribe: 'Hooved',
-    teeth: 5,
-    health: 1,
-    power: 0,
-    cost: 1,
-    type: 'blood',
-    img: blackGoat,
-  },
-  {
-    name: 'Elk',
-    desc: 'The flighty Elk. It moves after attacking.',
-    tribe: 'Hooved',
-    teeth: 2,
-    health: 4,
-    power: 2,
-    cost: 2,
-    type: 'blood',
-    img: elk,
-  },
-  {
-    name: 'Elk Fawn',
-    desc: 'The nascent Fawn. It quickly grows into an elk.',
-    tribe: 'Hooved',
-    teeth: 4,
-    health: 1,
-    power: 1,
-    cost: 1,
-    type: 'blood',
-    img: elkFawn,
-  },
-  {
-    name: 'Pronghorn',
-    desc: 'The sadistic Pronghorn. Woe be to those that meet the end of its antlers.',
-    tribe: 'Hooved',
+    name: 'Beaver',
+    desc: 'The industrious Beaver. When played it constructs Dams adjacent to it.',
+    tribe: 'Misc',
     teeth: 2,
     health: 3,
     power: 1,
     cost: 2,
     type: 'blood',
-    img: pronghorn,
-  },
-  {
-    name: 'Moose Buck',
-    desc: 'The regal moose buck. Creatures of the wild make way for it.',
-    tribe: 'Hooved',
-    teeth: 5,
-    health: 7,
-    power: 3,
-    cost: 3,
-    type: 'blood',
-    img: mooseBuck,
-  },
-  // Insect
-  {
-    name: 'Mantis God',
-    desc: 'The holy Mantis God. A perfect incarnation of terror',
-    tribe: 'Insect',
-    teeth: 6,
-    health: 1,
-    power: 1,
-    cost: 1,
-    type: 'blood',
-    img: mantisGod,
-  },
-  {
-    name: 'Strange Larva',
-    desc: 'A largely unimpressive specimen.',
-    tribe: 'Insect',
-    teeth: 7,
-    health: 3,
-    power: 0,
-    cost: 1,
-    type: 'blood',
-    img: strangeLarva,
+    img: beaver,
   },
   {
     name: 'Bee',
-    desc: 'A bee.',
+    desc: 'The bee.',
     tribe: 'Insect',
     teeth: 0,
     health: 1,
@@ -317,59 +161,61 @@ const inventory = [
     img: beehive,
   },
   {
-    name: 'Mantis',
-    desc: 'The fervid Mantis. Its prying claws strike both to the left and right',
-    tribe: 'Insect',
+    name: 'Black Goat',
+    desc: 'The apotheosized Goat. The truest offering. Sacrificing it grants three blood.',
+    tribe: 'Hooved',
     teeth: 5,
     health: 1,
-    power: 1,
-    cost: 1,
-    type: 'blood',
-    img: mantis,
-  },
-  {
-    name: 'Ring Worm',
-    desc: 'The underappreciated Ring Worm. Its value is not readily apparent.',
-    tribe: 'Insect',
-    teeth: 0,
-    health: '1',
     power: 0,
     cost: 1,
     type: 'blood',
-    img: ringWorm,
+    img: blackGoat,
   },
   {
-    name: 'Worker Ant',
-    desc: 'Ah, the diligent Ant. Its strength is proportionate to the size of its colony',
-    tribe: 'Insect',
-    teeth: 2,
-    health: 2,
-    power: 'Ant',
-    cost: 1,
-    type: 'blood',
-    img: workerAnt,
-  },
-  {
-    name: 'Ant Queen',
-    desc: 'The Regal Ant Queen. She births a new Ant once played.',
-    tribe: 'Insect',
-    teeth: 3,
+    name: 'Bloodhound',
+    desc: 'The dauntless bloodhound. It leaps to oppose new creatures when they are played.',
+    tribe: 'Canine',
+    teeth: '2',
     health: 3,
-    power: 'Ant',
+    power: 2,
     cost: 2,
     type: 'blood',
-    img: antQueen,
+    img: bloodhound,
   },
   {
-    name: 'Stinkbug',
-    desc: 'I wasn\'t sure if I would ever escape that Iron Crypt...',
-    tribe: 'Insect',
+    name: 'Bullfrog',
+    desc: 'The watchful Bullfrog. It leaps in the way of attacking flyers.',
+    tribe: 'Reptile',
     teeth: 3,
     health: 2,
     power: 1,
-    cost: 2,
-    type: 'bone',
-    img: stinkbug,
+    cost: 1,
+    type: 'blood',
+    img: bullfrog,
+  },
+
+  // C
+  {
+    name: 'Cat',
+    desc: 'The undying Cat. Sacrificing the poor beast does not kill it.',
+    tribe: 'Misc',
+    teeth: 3,
+    health: 1,
+    power: 0,
+    cost: 1,
+    type: 'blood',
+    img: cat,
+  },
+  {
+    name: 'Child 13',
+    desc: 'Poor abandoned child. It does not die when sacrificed... but do you have the heart to try?',
+    tribe: 'Hooved',
+    teeth: 6,
+    health: 1,
+    power: 0,
+    cost: 1,
+    type: 'blood',
+    img: child13,
   },
   {
     name: 'Cockroach',
@@ -393,251 +239,44 @@ const inventory = [
     type: 'bone',
     img: corpseMaggots,
   },
-
-  // Reptile
   {
-    name: 'Geck',
-    desc: 'The uninspiring Geck. Perhaps you can find a use for it?',
-    tribe: 'Reptile',
-    teeth: 6,
-    health: 1,
-    power: 1,
-    cost: 0,
-    type: '',
-    img: geck,
-  },
-  {
-    name: 'Ouroboros',
-    desc: 'The eternal serpent. Death strengthens it forever.',
-    tribe: 'Reptile',
-    teeth: 7,
-    health: 1,
-    power: 1,
-    cost: 2, 
-    type: 'blood',
-    img: ouroboros,
-  },
-  {
-    name: 'Bullfrog',
-    desc: 'The watchful Bullfrog. It leaps in the way of attacking flyers.',
-    tribe: 'Reptile',
+    name: 'Coyote',
+    desc: 'The meager Coyote. But what did you expect for only four bones?',
+    tribe: 'Canine',
     teeth: 3,
-    health: 2,
-    power: 1,
-    cost: 1,
-    type: 'blood',
-    img: bullfrog,
-  },
-  {
-    name: 'Skink',
-    desc: 'The Tenacious Skink. It moves over when attacked, leaving its tail behind.',
-    tribe: 'Reptile',
-    teeth: 5,
-    health: 2, 
-    power: 1,
-    cost: 1,
-    type: 'Reptile',
-    img: skink,
-  },
-  {
-    name: 'Adder',
-    desc: 'The caustic Adder. Damage from its poison bite is always lethal.',
-    tribe: 'Reptile',
-    teeth: 4,
     health: 1,
-    power: 1,
-    cost: 2,
-    type: 'blood',
-    img: adder,
-  },
-  {
-    name: 'River Snapper',
-    desc: 'The stalwart Snapper. A near impenetrable defense.',
-    tribe: 'Reptile',
-    teeth: 3,
-    health: 6,
-    power: 1,
-    cost: 2,
-    type: 'blood',
-    img: riverSnapper,
-  },
-  {
-    name: 'Rattler',
-    desc: 'The nefarious Rattler. A brittle creature... once past its monstrous fangs.',
-    tribe: 'Reptile',
-    teeth: 5,
-    health: 1,
-    power: 3,
-    cost: 6,
-    type: 'bone',
-    img: rattler,
-  },
-  // Miscellaneous
-  {
-    name: 'Mole Man',
-    desc: 'The stalwart Mole Man. The ultimate defense.',
-    tribe: 'Misc',
-    teeth: 5,
-    health: 6,
-    power: 0,
-    cost: 1,
-    type: 'blood',
-    img: moleMan,
-  },
-  {
-    name: 'Amalgam', 
-    desc: 'Canine. Hooved. Reptilian. Feathered. Insectoid. The Amalgam is all.',
-    tribe: 'Misc',
-    teeth: 5,
-    health: 3,
-    power: 3,
-    cost: 2,
-    type: 'blood',
-    img: Amalgam,
-  },
-  {
-    name: 'Pack Rat',
-    desc: 'The prudent Pack Rat. Never doubt the utility of a well stocked pack.',
-    tribe: 'Misc',
-    teeth: 4,
-    health: 2,
     power: 2,
-    cost: 2,
-    type: 'blood',
-    img: packRat,
-  },
-  {
-    name: 'The Daus',
-    desc: 'That filthy feral hog... it becomes incensed when its chimes are struck.',
-    tribe: 'Misc',
-    teeth: 3,
-    health: 2,
-    power: 2,
-    cost: 2,
-    type: 'blood',
-    img: theDaus,
-  },
-  {
-    name: 'Urayuli',
-    desc: 'The level of brutish strength needs no explanation.',
-    tribe: 'Misc',
-    teeth: 5,
-    health: 7,
-    power: 7,
     cost: 4,
-    type: 'blood',
-    img: urayuli,
-  },
-  {
-    name: 'Amoeba',
-    desc: 'The amorphous Amoeba. Its sigils are ever changing.',
-    tribe: 'Misc',
-    teeth: 5,
-    health: 2,
-    power: 1,
-    cost: 2,
     type: 'bone',
-    img: amoeba,
+    img: coyote,
   },
+  // D
+
+  // E
   {
-    name: 'Squirrel',
-    desc: 'The squirrel',
-    tribe: 'Misc',
-    teeth: 0,
-    health: 1,
-    power: 0,
-    cost: 0,
-    type: '',
-    img: squirrel,
-  },
-  {
-    name: 'Cat',
-    desc: 'The undying Cat. Sacrificing the poor beast does not kill it.',
-    tribe: 'Misc',
-    teeth: 3,
-    health: 1,
-    power: 0,
-    cost: 1,
-    type: 'blood',
-    img: cat,
-  },
-  {
-    name: 'Mole',
-    desc: 'The omnipresent mole. It burrows and emerges to block any landborne attacker.',
-    tribe: 'Misc',
-    teeth: 3,
+    name: 'Elk',
+    desc: 'The flighty Elk. It moves after attacking.',
+    tribe: 'Hooved',
+    teeth: 2,
     health: 4,
-    power: 0,
-    cost: 1,
-    type: 'blood',
-    img: mole,
-  },
-  {
-    name: 'Porcupine',
-    desc: 'The ornery Porcupine. Sharp quills await those who dare attack it.',
-    tribe: 'Misc',
-    teeth: 4,
-    health: 2,
-    power: 1,
-    cost: 1,
-    type: 'blood',
-    img: porcupine,
-  },
-  {
-    name: 'River Otter',
-    desc: 'An, the Elusive Otter. It submerges itself during my turn.',
-    tribe: 'Misc',
-    teeth: 2,
-    health: 1,
-    power: 1,
-    cost: 1,
-    type: 'blood',
-    img: riverOtter,
-  },
-  {
-    name: 'Skunk',
-    desc: 'The Reviled Skunk. Its stench reduces the strength of the enemy.',
-    tribe: 'Misc',
-    teeth: 3,
-    health: 3,
-    power: 0,
-    cost: 1,
-    type: 'blood',
-    img: skunk,
-  },
-  {
-    name: 'Stoat',
-    desc: 'Total misplay.',
-    tribe: 'Misc',
-    teeth: 4,
-    health: 3, 
-    power: 1,
-    cost: 1,
-    type: 'blood',
-    img: stoat,
-  },
-  {
-    name: 'Warren',
-    desc: 'The bountiful Warren. It spawns a rabbit when it is placed',
-    tribe: 'Misc',
-    teeth: 3,
-    health: 2,
-    power: 0,
-    cost: 1,
-    type: 'blood',
-    img: warren,
-  },
-  {
-    name: 'Beaver',
-    desc: 'The industrious Beaver. When played it constructs Dams adjacent to it.',
-    tribe: 'Misc',
-    teeth: 2,
-    health: 3,
-    power: 1,
+    power: 2,
     cost: 2,
     type: 'blood',
-    img: beaver,
+    img: elk,
   },
+  {
+    name: 'Elk Fawn',
+    desc: 'The nascent Fawn. It quickly grows into an elk.',
+    tribe: 'Hooved',
+    teeth: 4,
+    health: 1,
+    power: 1,
+    cost: 1,
+    type: 'blood',
+    img: elkFawn,
+  },
+
+  // F
   {
     name: 'Field Mice',
     desc: 'Hm. The licentious Field Mice. You will draw a copy when they are played.',
@@ -649,16 +288,18 @@ const inventory = [
     type: 'blood',
     img: fieldMice,
   },
+
+  // G
   {
-    name: 'Rat King',
-    desc: 'The tragic Rat King. When their tangled bodies become corpses you will gain four bones.',
-    tribe: 'Misc',
-    teeth: 2,
+    name: 'Geck',
+    desc: 'The uninspiring Geck. Perhaps you can find a use for it?',
+    tribe: 'Reptile',
+    teeth: 6,
     health: 1,
-    power: 2,
-    cost: 2,
-    type: 'blood',
-    img: ratKing,
+    power: 1,
+    cost: 0,
+    type: '',
+    img: geck,
   },
   {
     name: 'Great White',
@@ -682,6 +323,110 @@ const inventory = [
     type: 'blood',
     img: grizzly,
   },
+
+  // H
+
+  // I
+
+  // J
+
+  // K
+  {
+    name: 'Kingfisher',
+    desc: 'The adept Kingfisher. A slippery hunter.',
+    tribe: 'Avian',
+    teeth: 3,
+    health: 1,
+    power: 1,
+    cost: 1,
+    type: 'blood',
+    img: kingfisher,
+  },
+
+  // L
+  {
+    name: 'Long Elk',
+    desc: 'I have no words for this freak of nature.',
+    tribe: 'Hooved',
+    teeth: 5,
+    health: 2,
+    power: 1,
+    cost: 4,
+    type: 'bone',
+    img: longElk,
+  },
+
+  // M
+  {
+    name: 'Magpie',
+    desc: 'The covetous Magpie. It can fetch any card in your deck.',
+    tribe: 'Avian',
+    teeth: 4,
+    health: 1,
+    power: 1,
+    cost: 2,
+    type: 'blood',
+    img: magpie,
+  },
+  {
+    name: 'Mantis',
+    desc: 'The fervid Mantis. Its prying claws strike both to the left and right',
+    tribe: 'Insect',
+    teeth: 5,
+    health: 1,
+    power: 1,
+    cost: 1,
+    type: 'blood',
+    img: mantis,
+  },
+  {
+    name: 'Mantis God',
+    desc: 'The holy Mantis God. A perfect incarnation of terror.',
+    tribe: 'Insect',
+    teeth: 6,
+    health: 1,
+    power: 1,
+    cost: 1,
+    type: 'blood',
+    img: mantisGod,
+  },
+  {
+    name: 'Mole',
+    desc: 'The omnipresent mole. It burrows and emerges to block any landborne attacker.',
+    tribe: 'Misc',
+    teeth: 3,
+    health: 4,
+    power: 0,
+    cost: 1,
+    type: 'blood',
+    img: mole,
+  },
+  {
+    name: 'Mole Man',
+    desc: 'The stalwart Mole Man. The ultimate defense.',
+    tribe: 'Misc',
+    teeth: 5,
+    health: 6,
+    power: 0,
+    cost: 1,
+    type: 'blood',
+    img: moleMan,
+  },
+  {
+    name: 'Moose Buck',
+    desc: 'The regal moose buck. Creatures of the wild make way for it.',
+    tribe: 'Hooved',
+    teeth: 5,
+    health: 7,
+    power: 3,
+    cost: 3,
+    type: 'blood',
+    img: mooseBuck,
+  },
+
+  // N
+
+  // O
   {
     name: 'Opossum',
     desc: 'The resourceful Opossum. A small creature for a small price.',
@@ -694,15 +439,306 @@ const inventory = [
     img: opossum,
   },
   {
-    name: 'Bat',
-    desc: 'The meddlesome Bat. A minor terror.',
+    name: 'Ouroboros',
+    desc: 'The eternal serpent. Death strengthens it forever.',
+    tribe: 'Reptile',
+    teeth: 7,
+    health: 1,
+    power: 1,
+    cost: 2, 
+    type: 'blood',
+    img: ouroboros,
+  },
+
+  // P
+  {
+    name: 'Pack Rat',
+    desc: 'The prudent Pack Rat. Never doubt the utility of a well stocked pack.',
     tribe: 'Misc',
-    teeth: 3,
+    teeth: 4,
+    health: 2,
+    power: 2,
+    cost: 2,
+    type: 'blood',
+    img: packRat,
+  },
+  {
+    name: 'Porcupine',
+    desc: 'The ornery Porcupine. Sharp quills await those who dare attack it.',
+    tribe: 'Misc',
+    teeth: 4,
+    health: 2,
+    power: 1,
+    cost: 1,
+    type: 'blood',
+    img: porcupine,
+  },
+  {
+    name: 'Pronghorn',
+    desc: 'The sadistic Pronghorn. Woe be to those that meet the end of its antlers.',
+    tribe: 'Hooved',
+    teeth: 2,
+    health: 3,
+    power: 1,
+    cost: 2,
+    type: 'blood',
+    img: pronghorn,
+  },
+
+  // Q
+
+  // R
+  {
+    name: 'Rat King',
+    desc: 'The tragic Rat King. When their tangled bodies become corpses you will gain four bones.',
+    tribe: 'Misc',
+    teeth: 2,
     health: 1,
     power: 2,
-    cost: 4,
+    cost: 2,
+    type: 'blood',
+    img: ratKing,
+  },
+  {
+    name: 'Rattler',
+    desc: 'The nefarious Rattler. A brittle creature... once past its monstrous fangs.',
+    tribe: 'Reptile',
+    teeth: 5,
+    health: 1,
+    power: 3,
+    cost: 6,
     type: 'bone',
-    img: bat,
+    img: rattler,
+  },
+  {
+    name: 'Raven',
+    desc: 'The conniving Raven. A blight upon the skies.',
+    tribe: 'Avian',
+    teeth: 4,
+    health: 3,
+    power: 2,
+    cost: 2,
+    type: 'blood',
+    img: raven,
+  },
+  {
+    name: 'Raven Egg',
+    desc: 'A Nascent Raven. It is no less conniving in its incubation.',
+    tribe: 'Avian',
+    teeth: 3,
+    health: 2,
+    power: 0,
+    cost: 1,
+    type: 'blood',
+    img: ravenEgg,
+  },
+  {
+    name: 'Ring Worm',
+    desc: 'The underappreciated Ring Worm. Its value is not readily apparent.',
+    tribe: 'Insect',
+    teeth: 0,
+    health: '1',
+    power: 0,
+    cost: 1,
+    type: 'blood',
+    img: ringWorm,
+  },
+  {
+    name: 'River Otter',
+    desc: 'An, the Elusive Otter. It submerges itself during my turn.',
+    tribe: 'Misc',
+    teeth: 2,
+    health: 1,
+    power: 1,
+    cost: 1,
+    type: 'blood',
+    img: riverOtter,
+  },
+  {
+    name: 'River Snapper',
+    desc: 'The stalwart Snapper. A near impenetrable defense.',
+    tribe: 'Reptile',
+    teeth: 3,
+    health: 6,
+    power: 1,
+    cost: 2,
+    type: 'blood',
+    img: riverSnapper,
+  },
+  
+  // S
+  {
+    name: 'Skink',
+    desc: 'The Tenacious Skink. It moves over when attacked, leaving its tail behind.',
+    tribe: 'Reptile',
+    teeth: 5,
+    health: 2, 
+    power: 1,
+    cost: 1,
+    type: 'Reptile',
+    img: skink,
+  },
+  {
+    name: 'Skunk',
+    desc: 'The Reviled Skunk. Its stench reduces the strength of the enemy.',
+    tribe: 'Misc',
+    teeth: 3,
+    health: 3,
+    power: 0,
+    cost: 1,
+    type: 'blood',
+    img: skunk,
+  },
+  {
+    name: 'Sparrow',
+    desc: 'The Meek Sparrow. An inexpensive, if feeble, flying creature.',
+    tribe: 'Avian',
+    teeth: 3,
+    health: 2,
+    power: 1,
+    cost: 1,
+    type: 'blood',
+    img: sparrow,
+  },
+  {
+    name: 'Squirrel',
+    desc: 'The squirrel.',
+    tribe: 'Misc',
+    teeth: 0,
+    health: 1,
+    power: 0,
+    cost: 0,
+    type: '',
+    img: squirrel,
+  },
+  {
+    name: 'Stinkbug',
+    desc: 'I wasn\'t sure if I would ever escape that Iron Crypt...',
+    tribe: 'Insect',
+    teeth: 3,
+    health: 2,
+    power: 1,
+    cost: 2,
+    type: 'bone',
+    img: stinkbug,
+  },
+  {
+    name: 'Stoat',
+    desc: 'Total misplay.',
+    tribe: 'Misc',
+    teeth: 4,
+    health: 3, 
+    power: 1,
+    cost: 1,
+    type: 'blood',
+    img: stoat,
+  },
+  {
+    name: 'Strange Larva',
+    desc: 'A largely unimpressive specimen.',
+    tribe: 'Insect',
+    teeth: 7,
+    health: 3,
+    power: 0,
+    cost: 1,
+    type: 'blood',
+    img: strangeLarva,
+  },
+  {
+    name: 'Stunted Wolf',
+    desc: 'Take the film roll. Before he sees it! NOW!',
+    tribe: 'Canine',
+    teeth: 5,
+    health: 2,
+    power: 2, 
+    cost: 1,
+    type: 'blood',
+    img: stuntedWolf,
+  },
+
+  // T
+  {
+    name: 'The Daus',
+    desc: 'That filthy feral hog... it becomes incensed when its chimes are struck.',
+    tribe: 'Misc',
+    teeth: 3,
+    health: 2,
+    power: 2,
+    cost: 2,
+    type: 'blood',
+    img: theDaus,
+  },
+  {
+    name: 'Turkey Vulture',
+    desc: 'The pernicious Vulture. A tyrant of the skies.',
+    tribe: 'Avian',
+    teeth: 4,
+    health: 3,
+    power: 3,
+    cost: 8,
+    type: 'bone',
+    img: turkeyVulture,
+  },
+
+  // U
+  {
+    name: 'Urayuli',
+    desc: 'The level of brutish strength needs no explanation.',
+    tribe: 'Misc',
+    teeth: 5,
+    health: 7,
+    power: 7,
+    cost: 4,
+    type: 'blood',
+    img: urayuli,
+  },
+
+  // V
+
+  // W
+  {
+    name: 'Warren',
+    desc: 'The bountiful Warren. It spawns a rabbit when it is placed.',
+    tribe: 'Misc',
+    teeth: 3,
+    health: 2,
+    power: 0,
+    cost: 1,
+    type: 'blood',
+    img: warren,
+  },
+  {
+    name: 'Wolf',
+    desc: 'The proud Wolf. A vicious contender.',
+    tribe: 'Canine',
+    teeth: 4,
+    health: 2,
+    power: 3,
+    cost: 2,
+    type: 'blood',
+    img: wolf,
+  },
+  {
+    name: 'Wolf Cub',
+    desc: 'The young Wolf Cub. It grows into a Wolf after a single turn.',
+    tribe: 'Canine',
+    teeth: 5,
+    health: 1,
+    power: 1,
+    cost: 1,
+    type: 'blood',
+    img: wolfCub,
+  },
+  {
+    name: 'Worker Ant',
+    desc: 'Ah, the diligent Ant. Its strength is proportionate to the size of its colony',
+    tribe: 'Insect',
+    teeth: 2,
+    health: 2,
+    power: 'Ant',
+    cost: 1,
+    type: 'blood',
+    img: workerAnt,
   },
 ];
 
