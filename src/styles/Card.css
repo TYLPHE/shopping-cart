@@ -21,14 +21,11 @@ input[type='number'] {
   justify-content: space-around;
   width: 200px;
 }
-.card-name {
+.card-name, .price {
   text-align: center;
-  font-weight: bold;
+  font-size: 1.5rem;
 }
 .price-tag {
   display: flex;
   align-items: center;
-}
-.price {
-  font-size: 1.5rem;
 }

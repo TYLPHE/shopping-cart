@@ -1,5 +1,9 @@
+import { useState } from 'react';
 import './styles/Card.css';
-function Card({ inventory }) {
+
+function Card({ inventory, handleCart }) {
+  const [qty, setQty] = useState(0);
+
   return (
     <div className='card'>
       <img alt='test' src={inventory.img} />
@@ -12,17 +16,20 @@ function Card({ inventory }) {
         </div>
         <div>
           <label htmlFor={`${inventory.name}`}>Qty: &nbsp;</label>
-          <input 
+          <input
             type={'number'} 
             id={`${inventory.name}`} 
             pattern='[0-9]{1}'
             title='Limit 9'
-            defaultValue={0} 
+            value={qty}
             min={0} 
-            max={9} 
+            max={9}
+            onChange={e => setQty(e.target.value)}
           />
         </div>
-        <button>Add to cart</button>
+        <button type='submit' onClick={() => handleCart(qty, inventory.name)}>
+          Add to cart
+        </button>
       </div>
     </div>
   );
