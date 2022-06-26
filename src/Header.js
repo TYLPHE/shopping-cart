@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './styles/Header.css';
 import Cart from './Cart';
 
-function Header({ cart }) {
+function Header({ cart, rmCartItem }) {
   const [cartBool, setCartBool] = useState(false);
 
   return(
@@ -21,7 +21,7 @@ function Header({ cart }) {
       >
         shopping_cart
       </span>
-      <Cart cartBool={cartBool} cart={cart}/>
+      <Cart cartBool={cartBool} cart={cart} rmCartItem={rmCartItem}/>
     </header>
   )
 }

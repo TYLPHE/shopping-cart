@@ -14,8 +14,16 @@ function Shop() {
       const obj = {}
       obj.name = name;
       obj.qty = qty;
-      setCart(prev => [...prev, obj])
+      obj.id = cart.length;
+      setCart(prev => [...prev, obj]);
     }
+  }
+
+  function rmCartItem(index) {
+    const newCart = cart;
+    newCart.splice(index, 1);
+    setCart(newCart); 
+    console.log(cart);
   }
 
   function ShopWindow() {
@@ -35,7 +43,7 @@ function Shop() {
 
   return (
     <div className='main-window'>
-      <Header cart={cart}/>
+      <Header cart={cart} rmCartItem={rmCartItem}/>
       <div className='shop-body' style={{backgroundImage: `url(${shopBg})`}}>
         <Sidebar />
         <div className='shop-cont'>

@@ -5,6 +5,12 @@
   background-color: #1A1A1A;
   width: 400px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.center {
+  align-items: center;
 }
 .slide-in {
   animation: slide-in 150ms;
@@ -13,6 +19,11 @@
 .slide-out {
   animation: slide-out 150ms;
   right: -400px;
+}
+.cart-li {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid
 }
 @keyframes slide-in {
   from {
