@@ -15,4 +15,5 @@
 Shopping Cart is an app that lets a user navigate between the homepage and shopping page by using routing via `react-router-dom`. The user should be able to add items to the cart and see its total value. 
 
 ## Challenges
-### TBD
+### Deep copy of a state that is an array of objects
+More details to come. [The most helpful link](https://stackoverflow.com/questions/597588/how-do-you-clone-an-array-of-objects-in-javascript)
