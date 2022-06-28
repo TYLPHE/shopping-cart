@@ -37,6 +37,20 @@ input[type='text'] {
   gap: 5px;
   width: 50%;
 }
-.material-symbols-outlined:hover {
-  border: 1px solid;
+.icon-qty {
+  position: absolute;
+  background-color: #ce2f2f;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: .8rem;
+  right: 20px;
+  top: 10px;
+  user-select: none;
+  cursor: pointer;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }

@@ -8,22 +8,37 @@ import { useState } from 'react';
 
 function Shop() {
   const [cart, setCart] = useState([]);
+  const [cartBool, setCartBool] = useState(false);
+  const [cartId, setCartID] = useState(0)
 
-  function handleCart(qty, name) {
+  function handleCart(qty, name, img, cost) {
     if (qty > 0) {
+      for (let i = 0; i < cart.length; i += 1) {
+        if (cart[i].name === name) {
+          const newCart = structuredClone(cart);
+          newCart[i].qty += parseInt(qty);
+          return setCart(newCart);
+        }
+      }
       const obj = {}
       obj.name = name;
-      obj.qty = qty;
-      obj.id = cart.length;
+      obj.qty = parseInt(qty);
+      obj.img = img;
+      obj.cost = cost;
+      obj.id = cartId;
+      setCartID(x => x + 1);
       setCart(prev => [...prev, obj]);
     }
   }
 
-  function rmCartItem(index) {
-    const newCart = cart;
-    newCart.splice(index, 1);
-    setCart(newCart); 
-    console.log(cart);
+  function rmCartItem(id) {
+    for (let i = 0; i < cart.length; i += 1) {
+      if (cart[i].id === id) {
+        const newCart = structuredClone(cart);
+        newCart.splice(i, 1);
+        setCart(newCart); 
+      }
+    }
   }
 
   function ShopWindow() {
@@ -34,6 +49,7 @@ function Shop() {
           key={inventory[i].name} 
           inventory={inventory[i]}
           handleCart={handleCart}
+          setCartBool={setCartBool}
         />
       )
       arr.push(card)
@@ -43,7 +59,7 @@ function Shop() {
 
   return (
     <div className='main-window'>
-      <Header cart={cart} rmCartItem={rmCartItem}/>
+      <Header cart={cart} rmCartItem={rmCartItem} cartBool={cartBool} setCartBool={setCartBool}/>
       <div className='shop-body' style={{backgroundImage: `url(${shopBg})`}}>
         <Sidebar />
         <div className='shop-cont'>
