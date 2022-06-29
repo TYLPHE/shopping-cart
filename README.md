@@ -17,3 +17,6 @@ Shopping Cart is an app that lets a user navigate between the homepage and shopp
 ## Challenges
 ### Deep copy of a state that is an array of objects
 More details to come. [The most helpful link](https://stackoverflow.com/questions/597588/how-do-you-clone-an-array-of-objects-in-javascript)
+
+### Filtering
+Initially tried to create a state for filters but that didnt work. More details on solutions soon.

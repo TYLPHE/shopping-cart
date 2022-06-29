@@ -69,6 +69,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: adder,
+    display: true,
   },
   {
     name: 'Alpha',
@@ -80,6 +81,7 @@ const inventory = [
     cost: 5,
     type: 'bone',
     img: alpha,
+    display: true,
   },
   {
     name: 'Amalgam', 
@@ -91,6 +93,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: amalgam,
+    display: true,
   },
   {
     name: 'Amoeba',
@@ -102,6 +105,7 @@ const inventory = [
     cost: 2,
     type: 'bone',
     img: amoeba,
+    display: true,
   },
   {
     name: 'Ant Queen',
@@ -113,6 +117,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: antQueen,
+    display: true,
   },
 
   // B
@@ -126,6 +131,7 @@ const inventory = [
     cost: 4,
     type: 'bone',
     img: bat,
+    display: true,
   },
   {
     name: 'Beaver',
@@ -137,6 +143,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: beaver,
+    display: true,
   },
   {
     name: 'Bee',
@@ -148,6 +155,7 @@ const inventory = [
     cost: 0,
     type: '',
     img: bee,
+    display: true,
   },
   {
     name: 'Beehive',
@@ -159,6 +167,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: beehive,
+    display: true,
   },
   {
     name: 'Black Goat',
@@ -170,6 +179,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: blackGoat,
+    display: true,
   },
   {
     name: 'Bloodhound',
@@ -181,6 +191,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: bloodhound,
+    display: true,
   },
   {
     name: 'Bullfrog',
@@ -192,6 +203,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: bullfrog,
+    display: true,
   },
 
   // C
@@ -205,6 +217,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: cat,
+    display: true,
   },
   {
     name: 'Child 13',
@@ -216,6 +229,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: child13,
+    display: true,
   },
   {
     name: 'Cockroach',
@@ -227,6 +241,7 @@ const inventory = [
     cost: 4,
     type: 'bone',
     img: cockroach,
+    display: true,
   },
   {
     name: 'Corpse Maggots',
@@ -238,6 +253,7 @@ const inventory = [
     cost: 5,
     type: 'bone',
     img: corpseMaggots,
+    display: true,
   },
   {
     name: 'Coyote',
@@ -249,6 +265,7 @@ const inventory = [
     cost: 4,
     type: 'bone',
     img: coyote,
+    display: true,
   },
   // D
 
@@ -263,6 +280,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: elk,
+    display: true,
   },
   {
     name: 'Elk Fawn',
@@ -274,6 +292,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: elkFawn,
+    display: true,
   },
 
   // F
@@ -287,6 +306,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: fieldMice,
+    display: true,
   },
 
   // G
@@ -300,6 +320,7 @@ const inventory = [
     cost: 0,
     type: '',
     img: geck,
+    display: true,
   },
   {
     name: 'Great White',
@@ -311,6 +332,7 @@ const inventory = [
     cost: 3,
     type: 'blood',
     img: greatWhite,
+    display: true,
   },
   {
     name: 'Grizzly',
@@ -322,6 +344,7 @@ const inventory = [
     cost: 3,
     type: 'blood',
     img: grizzly,
+    display: true,
   },
 
   // H
@@ -341,6 +364,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: kingfisher,
+    display: true,
   },
 
   // L
@@ -354,6 +378,7 @@ const inventory = [
     cost: 4,
     type: 'bone',
     img: longElk,
+    display: true,
   },
 
   // M
@@ -367,6 +392,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: magpie,
+    display: true,
   },
   {
     name: 'Mantis',
@@ -378,6 +404,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: mantis,
+    display: true,
   },
   {
     name: 'Mantis God',
@@ -389,6 +416,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: mantisGod,
+    display: true,
   },
   {
     name: 'Mole',
@@ -400,6 +428,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: mole,
+    display: true,
   },
   {
     name: 'Mole Man',
@@ -411,6 +440,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: moleMan,
+    display: true,
   },
   {
     name: 'Moose Buck',
@@ -422,6 +452,7 @@ const inventory = [
     cost: 3,
     type: 'blood',
     img: mooseBuck,
+    display: true,
   },
 
   // N
@@ -437,6 +468,7 @@ const inventory = [
     cost: 2,
     type: 'bone',
     img: opossum,
+    display: true,
   },
   {
     name: 'Ouroboros',
@@ -448,6 +480,7 @@ const inventory = [
     cost: 2, 
     type: 'blood',
     img: ouroboros,
+    display: true,
   },
 
   // P
@@ -461,6 +494,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: packRat,
+    display: true,
   },
   {
     name: 'Porcupine',
@@ -472,6 +506,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: porcupine,
+    display: true,
   },
   {
     name: 'Pronghorn',
@@ -483,6 +518,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: pronghorn,
+    display: true,
   },
 
   // Q
@@ -498,6 +534,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: ratKing,
+    display: true,
   },
   {
     name: 'Rattler',
@@ -509,6 +546,7 @@ const inventory = [
     cost: 6,
     type: 'bone',
     img: rattler,
+    display: true,
   },
   {
     name: 'Raven',
@@ -520,6 +558,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: raven,
+    display: true,
   },
   {
     name: 'Raven Egg',
@@ -531,6 +570,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: ravenEgg,
+    display: true,
   },
   {
     name: 'Ring Worm',
@@ -542,6 +582,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: ringWorm,
+    display: true,
   },
   {
     name: 'River Otter',
@@ -553,6 +594,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: riverOtter,
+    display: true,
   },
   {
     name: 'River Snapper',
@@ -564,6 +606,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: riverSnapper,
+    display: true,
   },
   
   // S
@@ -577,6 +620,7 @@ const inventory = [
     cost: 1,
     type: 'Reptile',
     img: skink,
+    display: true,
   },
   {
     name: 'Skunk',
@@ -588,6 +632,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: skunk,
+    display: true,
   },
   {
     name: 'Sparrow',
@@ -599,6 +644,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: sparrow,
+    display: true,
   },
   {
     name: 'Squirrel',
@@ -610,6 +656,7 @@ const inventory = [
     cost: 0,
     type: '',
     img: squirrel,
+    display: true,
   },
   {
     name: 'Stinkbug',
@@ -621,6 +668,7 @@ const inventory = [
     cost: 2,
     type: 'bone',
     img: stinkbug,
+    display: true,
   },
   {
     name: 'Stoat',
@@ -632,6 +680,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: stoat,
+    display: true,
   },
   {
     name: 'Strange Larva',
@@ -643,6 +692,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: strangeLarva,
+    display: true,
   },
   {
     name: 'Stunted Wolf',
@@ -654,6 +704,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: stuntedWolf,
+    display: true,
   },
 
   // T
@@ -667,6 +718,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: theDaus,
+    display: true,
   },
   {
     name: 'Turkey Vulture',
@@ -678,6 +730,7 @@ const inventory = [
     cost: 8,
     type: 'bone',
     img: turkeyVulture,
+    display: true,
   },
 
   // U
@@ -691,6 +744,7 @@ const inventory = [
     cost: 4,
     type: 'blood',
     img: urayuli,
+    display: true,
   },
 
   // V
@@ -706,6 +760,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: warren,
+    display: true,
   },
   {
     name: 'Wolf',
@@ -717,6 +772,7 @@ const inventory = [
     cost: 2,
     type: 'blood',
     img: wolf,
+    display: true,
   },
   {
     name: 'Wolf Cub',
@@ -728,6 +784,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: wolfCub,
+    display: true,
   },
   {
     name: 'Worker Ant',
@@ -739,6 +796,7 @@ const inventory = [
     cost: 1,
     type: 'blood',
     img: workerAnt,
+    display: true,
   },
 ];
 

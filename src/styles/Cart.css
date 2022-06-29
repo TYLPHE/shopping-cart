@@ -53,6 +53,30 @@
 .in-stock {
   color: #00b400;
 }
+.update-qty {
+  display: flex;
+  gap: .5rem;
+  font-size: 1.5rem;
+  align-items: center;
+}
+.inc-dec-button {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.cart-qty {
+  width: 3rem;
+  text-align: center;
+  overflow: scroll;
+}
+.rm-button {
+  width: 5rem;
+}
+.checkout {
+  height: 2rem;
+  width: 100%;
+}
 @keyframes slide-in {
   from {
     right: -400px;

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './styles/Card.css';
 
-function Card({ inventory, handleCart }) {
+function Card({ inv, handleCart }) {
   const [qty, setQty] = useState(1);
 
   function ToothCost({ teeth }) {
@@ -26,17 +26,17 @@ function Card({ inventory, handleCart }) {
 
   return (
     <div className='card'>
-      <img alt='test' src={inventory.img} />
+      <img alt='test' src={inv.img} />
       <div className='card-details'>
-        <div className='card-name'>{inventory.name}</div>
-        <div>{inventory.desc}</div>
-        <ToothCost teeth={inventory.teeth}/>
+        <div className='card-name'>{inv.name}</div>
+        <div>{inv.desc}</div>
+        <ToothCost teeth={inv.teeth}/>
         <div className='in-stock'>In Stock</div>
         <div>
-          <label htmlFor={`${inventory.name}`}>Qty: &nbsp;</label>
+          <label htmlFor={`${inv.name}`}>Qty: &nbsp;</label>
           <input
             type={'number'} 
-            id={`${inventory.name}`} 
+            id={`${inv.name}`} 
             value={qty}
             min={0} 
             onChange={e => setQty(e.target.value)}
@@ -47,9 +47,9 @@ function Card({ inventory, handleCart }) {
           onClick={() => {
             handleCart(
               qty, 
-              inventory.name, 
-              inventory.img, 
-              inventory.cost
+              inv.name, 
+              inv.img, 
+              inv.cost
             )}
           }
         >

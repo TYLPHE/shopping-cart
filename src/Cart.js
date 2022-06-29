@@ -1,13 +1,12 @@
 import './styles/Cart.css';
-import inventory from './inventory';
 
-function Cart({ cartBool, cart, rmCartItem }) {
+function Cart({ cartBool, cart, rmCartItem, handleCart, inv }) {
   function Total() {
     let subtotal = 0;
     cart.forEach(obj => {
-      inventory.forEach(inv => {
-        if (obj.name === inv.name) {
-          subtotal += inv.teeth * obj.qty;
+      inv.forEach(item => {
+        if (obj.name === item.name) {
+          subtotal += item.teeth * obj.qty;
         }
       });
     });
@@ -22,6 +21,29 @@ function Cart({ cartBool, cart, rmCartItem }) {
       return <>{cost} teeth</>
     }
   }
+
+  function UpdateQty({ obj }) {
+    return (
+      <div className='update-qty'>
+        <button 
+          className='inc-dec-button'
+          onClick={
+            () => handleCart(-1, obj.name, obj.img, obj.cost, obj.id)}
+          >
+            -
+          </button>
+        <div className='cart-qty'>{obj.qty}</div>
+        <button 
+          className='inc-dec-button'
+          onClick={
+            () => handleCart(1, obj.name, obj.img, obj.cost, obj.id)}
+          >
+            +
+          </button>
+      </div>
+    )
+  }
+
   function List() {
     return cart.map(obj => {
       return (
@@ -30,13 +52,18 @@ function Cart({ cartBool, cart, rmCartItem }) {
             <img className='cart-img' alt={`${obj.name}`} src={obj.img} />
             <div className='cart-desc'>
               <div>{obj.name}</div>
-              <div>{<ToothCost  cost={obj.cost}/>}</div>
+              <div>{<ToothCost cost={obj.cost}/>}</div>
               <div className='in-stock'>In Stock</div>
             </div>
           </div>
           <div className='cart-qty-cont'>
-            <span>Qty: {obj.qty}</span>
-            <button onClick={() => rmCartItem(obj.id)}>remove</button>
+            <UpdateQty obj={obj}/>
+            <button 
+              className='rm-button' 
+              onClick={() => rmCartItem(obj.id)}
+            >
+              remove
+            </button>
           </div>
         </div>
       );
@@ -60,11 +87,19 @@ function Cart({ cartBool, cart, rmCartItem }) {
       <div className='shopping-cart slide-in'>
         <div>
           <span>Subtotal </span>
-          {/* <span className='subtotal-value'>{<Total />}</span> */}
           <Total />
           <span> teeth</span>
         </div>
-        <button>Proceed to checkout ({<TotalCards />})</button>
+        <a 
+          className='checkout-link' 
+          href='https://github.com/tylphe/shopping-cart' 
+          target='_blank' 
+          rel='noreferrer'
+        >
+          <button className='checkout'>
+            Proceed to checkout ({<TotalCards />})
+          </button>
+        </a>
         <List className='shopping-list'/>
       </div>
     );

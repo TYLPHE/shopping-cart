@@ -3,7 +3,7 @@ import './styles/Header.css';
 import Cart from './Cart';
 import IconQty from './IconQty';
 
-function Header({ cart, rmCartItem, cartBool, setCartBool }) {
+function Header({ cart, rmCartItem, cartBool, setCartBool, handleCart, inv}) {
   return(
     <header>
       <Link className='header-title' to='/shopping-cart/'>
@@ -19,7 +19,13 @@ function Header({ cart, rmCartItem, cartBool, setCartBool }) {
       >
         shopping_cart
       </span>
-      <Cart cartBool={cartBool} cart={cart} rmCartItem={rmCartItem}/>
+      <Cart 
+        cartBool={cartBool} 
+        cart={cart} 
+        rmCartItem={rmCartItem}
+        handleCart={handleCart}  
+        inv={inv}
+      />
       <IconQty cart={cart} setCartBool={setCartBool}/>
     </header>
   )
