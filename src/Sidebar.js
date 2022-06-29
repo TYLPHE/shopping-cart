@@ -1,42 +1,25 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import './styles/Sidebar.css';
 
 function Sidebar(
   {
-    avian, 
-    handleAvian,
-    canine,
-    handleCanine,
-    cost,
-    handleCost
+    tribe,
+    setTribe,
+    teeth,
+    setTeeth,
   }
 ) {
-  const [hooved, setHooved] = useState(false);
-  const [insect, setInsect] = useState(false);
-  const [reptile, setReptile] = useState(false);
-  const [misc, setMisc] = useState(false);
 
   function Tribe() {
-    const types = ['Avian', 'Canine', 'Hooved', 'Insect', 'Reptile', 'Miscellaneous'];
-    const tribeChecked = [avian, canine, hooved, insect, reptile, misc];
-    const setTribeChecked = [
-      () => handleAvian(), 
-      () => handleCanine(), 
-      () => setHooved(v => !v), 
-      () => setInsect(v => !v), 
-      () => setReptile(v => !v), 
-      () => setMisc(v => !v)
-    ];
+    const types = ['All', 'Avian', 'Canine', 'Hooved', 'Insect', 'Reptile', 'Misc'];
     const arr = [];
     for (let i = 0; i < types.length; i += 1) {
       const div = (
         <div key={types[i]}>
           <input 
-            // checked={tribeChecked[i]}
-            // onChange={setTribeChecked[i]}
-            checked={tribeChecked[i]}
-            onChange={setTribeChecked[i]}
-            type={`checkbox`} 
+            value={tribe}
+            checked={tribe === types[i]}
+            onChange={() => setTribe(types[i])}
+            type={`radio`} 
             id={types[i]} 
             name='tribe'
           />
@@ -49,16 +32,20 @@ function Sidebar(
   }
   
   function Teeth() {
+    const types = ['All', 1, 2, 3, 4, 5, 6, 7]
     const arr = [];
-    for (let i = 0; i <= 7; i += 1) {
+    for (let i = 0; i < types.length; i += 1) {
       const div = (
         <div key={`teeth${i}`}>
           <input 
-            type={`checkbox`} 
+            value={teeth}
+            checked={teeth === types[i]}
+            onChange={() => setTeeth(types[i])}
+            type={`radio`} 
             id={`teeth${i}`} 
             name='teeth' 
           />
-          <label className={'label-filter'} htmlFor={`teeth${i}`}>{i}</label>
+          <label className={'label-filter'} htmlFor={`teeth${i}`}>{types[i]}</label>
         </div>
       );
       arr.push(div);
@@ -108,8 +95,6 @@ function Sidebar(
       const div = (
         <div key={`cost${i}`}>
           <input 
-            checked={cost}
-            onChange={() => handleCost()}
             type={`checkbox`} 
             id={`cost${i}`} 
             name='cost' 
@@ -123,13 +108,13 @@ function Sidebar(
   }
   
   function CostType() {
-    const types = ['blood', 'bone'];
+    const types = ['All', 'blood', 'bone'];
     const arr = [];
     for (let i = 0; i < types.length; i += 1) {
       const div = (
         <div key={`costType${i}`}>
           <input 
-            type={`checkbox`} 
+            type={`radio`} 
             id={`costType${i}`} 
             name='costType'
           />
