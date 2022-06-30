@@ -10,8 +10,6 @@ function Header(
     cartBool, 
     setCartBool, 
     handleCart, 
-    inv, 
-    search, 
     setSearch
   }
 ) {
@@ -21,8 +19,7 @@ function Header(
         <div className='logo'>Shopping Cart by TYLPHE</div>
       </Link>
       <div className='searchbar'>
-        <input 
-          // value={search}
+        <input
           onChange={(e) => {
             setSearch(e.target.value);
           }}
@@ -42,7 +39,6 @@ function Header(
         cart={cart} 
         rmCartItem={rmCartItem}
         handleCart={handleCart}  
-        inv={inv}
       />
       <IconQty cart={cart} setCartBool={setCartBool}/>
     </header>

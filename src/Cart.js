@@ -1,10 +1,11 @@
 import './styles/Cart.css';
+import inventory from './inventory';
 
-function Cart({ cartBool, cart, rmCartItem, handleCart, inv }) {
+function Cart({ cartBool, cart, rmCartItem, handleCart }) {
   function Total() {
     let subtotal = 0;
     cart.forEach(obj => {
-      inv.forEach(item => {
+      inventory.forEach(item => {
         if (obj.name === item.name) {
           subtotal += item.teeth * obj.qty;
         }

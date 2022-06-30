@@ -7,12 +7,13 @@ import shopBg from './images/shopBg.jpg';
 import { useState } from 'react';
 
 function Shop() {
+  // cart states
   const [cart, setCart] = useState([]);
   const [cartBool, setCartBool] = useState(false);
   const [cartId, setCartID] = useState(0);
-  const [inv, setInv] = useState(structuredClone(inventory));
-  const [search, setSearch] = useState('')
+  
   // states for filter
+  const [search, setSearch] = useState('');
   const [tribe, setTribe] = useState('All');
   const [teeth, setTeeth] = useState('All');
   const [health, setHealth] = useState('All');
@@ -20,6 +21,7 @@ function Shop() {
   const [cost, setCost] = useState('All');
   const [type, setType] = useState('All');
 
+  // updates the cart state for the Cart component
   function handleCart(qty, name, img, cost, id) {
     if (qty > 0 || qty < 0) {
       for (let i = 0; i < cart.length; i += 1) {
@@ -54,15 +56,16 @@ function Shop() {
     }
   }
 
+  // displays all the cards
   function ShopWindow() {
     let arr = [];
-    for (let i = 0; i < inv.length; i += 1) {
+    for (let i = 0; i < inventory.length; i += 1) {
       if (search !== '') {
-        if (inv[i].name.toLowerCase().includes(search.toLowerCase())) {
+        if (inventory[i].name.toLowerCase().includes(search.toLowerCase())) {
           let card = (
             <Card 
-              key={inv[i].name} 
-              inv={inv[i]}
+              key={inventory[i].name} 
+              inv={inventory[i]}
               handleCart={handleCart}
               setCartBool={setCartBool}
             />
@@ -70,19 +73,17 @@ function Shop() {
           arr.push(card);
         }
       } else if (
-        (tribe === 'All' || inv[i].tribe === tribe) &&
-        (teeth === 'All' || inv[i].teeth === teeth) &&
-        (health === 'All' || inv[i].health === health) &&
-        (power === 'All' || inv[i].power === power) &&
-        (cost === 'All' || inv[i].cost === cost) &&
-        (type === 'All' || inv[i].type === type)
+        (tribe === 'All' || inventory[i].tribe === tribe) &&
+        (teeth === 'All' || inventory[i].teeth === teeth) &&
+        (health === 'All' || inventory[i].health === health) &&
+        (power === 'All' || inventory[i].power === power) &&
+        (cost === 'All' || inventory[i].cost === cost) &&
+        (type === 'All' || inventory[i].type === type)
       ) {
-        console.log('test')
-
         let card = (
           <Card 
-            key={inv[i].name} 
-            inv={inv[i]}
+            key={inventory[i].name} 
+            inv={inventory[i]}
             handleCart={handleCart}
             setCartBool={setCartBool}
           />
@@ -101,8 +102,6 @@ function Shop() {
         cartBool={cartBool} 
         setCartBool={setCartBool}
         handleCart={handleCart}
-        inv={inv}
-        search={search}
         setSearch={setSearch}
       />
       <div className='shop-body' style={{backgroundImage: `url(${shopBg})`}}>
@@ -121,7 +120,9 @@ function Shop() {
           setType={setType}
         />
         <div className='shop-cont'>
-          <ShopWindow />
+          <div className='card-cont'>
+            <ShopWindow />
+          </div>
         </div>
       </div>
     </div>

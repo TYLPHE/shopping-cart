@@ -6,6 +6,12 @@ input[type='number'] {
   text-align: center;
   text-shadow: -1px .5px 1px black;
 }
+.card-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
 .card {
   display: flex;
   gap: 10px;

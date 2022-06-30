@@ -68,7 +68,7 @@
 .cart-qty {
   width: 3rem;
   text-align: center;
-  overflow: scroll;
+  height: 100%;
 }
 .rm-button {
   width: 5rem;

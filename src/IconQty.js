@@ -1,3 +1,4 @@
+// number next to cart when adding item
 function IconQty({ cart, setCartBool }) {
   let items = 0;
   for (let i = 0; i < cart.length; i += 1) {
