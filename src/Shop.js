@@ -11,10 +11,14 @@ function Shop() {
   const [cartBool, setCartBool] = useState(false);
   const [cartId, setCartID] = useState(0);
   const [inv, setInv] = useState(structuredClone(inventory));
-
+  const [search, setSearch] = useState('')
   // states for filter
   const [tribe, setTribe] = useState('All');
   const [teeth, setTeeth] = useState('All');
+  const [health, setHealth] = useState('All');
+  const [power, setPower] = useState('All');
+  const [cost, setCost] = useState('All');
+  const [type, setType] = useState('All');
 
   function handleCart(qty, name, img, cost, id) {
     if (qty > 0 || qty < 0) {
@@ -51,32 +55,10 @@ function Shop() {
   }
 
   function ShopWindow() {
-    const filters = [tribe, teeth]
     let arr = [];
-    const noAll = filters.filter(elem => elem !== 'All');
-
-    console.log(noAll)
-
     for (let i = 0; i < inv.length; i += 1) {
-      for (let i = 0; i < noAll.length; i += 1 ) {
-      }
-    }
-
-
-
-
-      for (let i = 0; i < inv.length; i += 1) {
-        if (inv[i].tribe === tribe) {
-          let card = (
-            <Card 
-              key={inv[i].name} 
-              inv={inv[i]}
-              handleCart={handleCart}
-              setCartBool={setCartBool}
-            />
-          )
-          arr.push(card);
-        } else if (noAll.length === 0) {
+      if (search !== '') {
+        if (inv[i].name.toLowerCase().includes(search.toLowerCase())) {
           let card = (
             <Card 
               key={inv[i].name} 
@@ -87,7 +69,27 @@ function Shop() {
           )
           arr.push(card);
         }
+      } else if (
+        (tribe === 'All' || inv[i].tribe === tribe) &&
+        (teeth === 'All' || inv[i].teeth === teeth) &&
+        (health === 'All' || inv[i].health === health) &&
+        (power === 'All' || inv[i].power === power) &&
+        (cost === 'All' || inv[i].cost === cost) &&
+        (type === 'All' || inv[i].type === type)
+      ) {
+        console.log('test')
+
+        let card = (
+          <Card 
+            key={inv[i].name} 
+            inv={inv[i]}
+            handleCart={handleCart}
+            setCartBool={setCartBool}
+          />
+        )
+        arr.push(card);
       }
+    }
     return arr;
   }
 
@@ -100,6 +102,8 @@ function Shop() {
         setCartBool={setCartBool}
         handleCart={handleCart}
         inv={inv}
+        search={search}
+        setSearch={setSearch}
       />
       <div className='shop-body' style={{backgroundImage: `url(${shopBg})`}}>
         <Sidebar 
@@ -107,6 +111,14 @@ function Shop() {
           setTribe={setTribe}
           teeth={teeth}
           setTeeth={setTeeth}
+          health={health}
+          setHealth={setHealth}
+          power={power}
+          setPower={setPower}
+          cost={cost}
+          setCost={setCost}
+          type={type}
+          setType={setType}
         />
         <div className='shop-cont'>
           <ShopWindow />

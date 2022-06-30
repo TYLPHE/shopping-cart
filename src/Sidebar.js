@@ -6,6 +6,14 @@ function Sidebar(
     setTribe,
     teeth,
     setTeeth,
+    health,
+    setHealth,
+    power,
+    setPower,
+    cost,
+    setCost,
+    type,
+    setType,
   }
 ) {
 
@@ -32,7 +40,7 @@ function Sidebar(
   }
   
   function Teeth() {
-    const types = ['All', 1, 2, 3, 4, 5, 6, 7]
+    const types = ['All', 1, 2, 3, 4, 5, 6, 7];
     const arr = [];
     for (let i = 0; i < types.length; i += 1) {
       const div = (
@@ -54,16 +62,20 @@ function Sidebar(
   }
   
   function Health() {
+    const types = ['All', 1, 2, 3, 4, 5, 6, 7];
     const arr = [];
-    for (let i = 0; i <= 7; i += 1) {
+    for (let i = 0; i < types.length; i += 1) {
       const div = (
         <div key={`health${i}`}>
-          <input 
-            type={`checkbox`} 
+          <input
+            value={health}
+            checked={health === types[i]}
+            onChange={() => setHealth(types[i])}
+            type={`radio`} 
             id={`health${i}`} 
             name='health' 
           />
-          <label className={'label-filter'} htmlFor={`health${i}`}>{i}</label>
+          <label className={'label-filter'} htmlFor={`health${i}`}>{types[i]}</label>
         </div>
       );
       arr.push(div);
@@ -72,16 +84,20 @@ function Sidebar(
   }
   
   function Power() {
+    const types = ['All', 1, 2, 3, 4, 5, 6, 7];
     const arr = [];
-    for (let i = 0; i <= 7; i += 1) {
+    for (let i = 0; i < types.length; i += 1) {
       const div = (
         <div key={`power${i}`}>
-          <input 
-            type={`checkbox`} 
+          <input
+            value={power}
+            checked={power === types[i]}
+            onChange={() => setPower(types[i])}
+            type={`radio`} 
             id={`power${i}`} 
             name='power' 
           />
-          <label className={'label-filter'} htmlFor={`power${i}`}>{i}</label>
+          <label className={'label-filter'} htmlFor={`power${i}`}>{types[i]}</label>
         </div>
       );
       arr.push(div);
@@ -90,16 +106,20 @@ function Sidebar(
   }
   
   function Cost() {
+    const types = ['All', 1, 2, 3, 4, 5, 6, 7, 8];
     const arr = [];
-    for (let i = 0; i <= 8; i += 1) {
+    for (let i = 0; i < types.length; i += 1) {
       const div = (
         <div key={`cost${i}`}>
-          <input 
-            type={`checkbox`} 
+          <input
+            value={cost}
+            checked={cost === types[i]}
+            onChange={() => setCost(types[i])}
+            type={`radio`} 
             id={`cost${i}`} 
             name='cost' 
           />
-          <label className={'label-filter'} htmlFor={`cost${i}`}>{i}</label>
+          <label className={'label-filter'} htmlFor={`cost${i}`}>{types[i]}</label>
         </div>
       );
       arr.push(div);
@@ -113,7 +133,10 @@ function Sidebar(
     for (let i = 0; i < types.length; i += 1) {
       const div = (
         <div key={`costType${i}`}>
-          <input 
+          <input
+            value={type}
+            checked={type === types[i]}
+            onChange={() => setType(types[i])}
             type={`radio`} 
             id={`costType${i}`} 
             name='costType'
@@ -125,8 +148,27 @@ function Sidebar(
     }
     return arr;
   }
+
+  function ResetButton() {
+    return (
+      <button onClick={
+        () => {
+          setTribe('All')
+          setTeeth('All')
+          setHealth('All')
+          setPower('All')
+          setCost('All')
+          setType('All')
+        }
+      }
+      >
+        Reset filters
+      </button>
+    );
+  }
   return (
     <div className="sidebar">
+      <ResetButton />
       <fieldset>
         <legend className='bold'>Tribes</legend>
         <Tribe />
