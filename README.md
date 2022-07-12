@@ -26,7 +26,7 @@ To create all the images seen on the project, I used Inscryption's wiki page and
 
 I reference this inventory.js file and pull all the data from it such as the image, the cost of each card, the attack power, etc. It was also important to use inventory.js to create filter functionality on my website. More info on filtering below! 
 
-### Deep copy of a state that is an array of objects
+### A state that's an array of objects not updating components
 A big problem I had was that if I try to set the state of an array of objects, the component did not update. This specific example happened when I tried to update my shopping cart's state.
 
 My shopping cart depends on an array of objects:
