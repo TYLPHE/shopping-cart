@@ -15,11 +15,12 @@ function Cart({ cartBool, cart, rmCartItem, handleCart }) {
     return <span className='subtotal-value'>{subtotal}</span>;
   }
 
-  function ToothCost({ cost }) {
-    if (cost === 1) {
-      return <>{cost} tooth</>
+  function ToothCost({ teeth }) {
+    console.log(teeth)
+    if (teeth === 1) {
+      return <>{teeth} tooth</>
     } else {
-      return <>{cost} teeth</>
+      return <>{teeth} teeth</>
     }
   }
 
@@ -47,13 +48,14 @@ function Cart({ cartBool, cart, rmCartItem, handleCart }) {
 
   function List() {
     return cart.map(obj => {
+      console.log(obj)
       return (
         <div key={obj.id} className='cart-li'>
           <div className='cart-desc-cont'>
             <img className='cart-img' alt={`${obj.name}`} src={obj.img} />
             <div className='cart-desc'>
               <div>{obj.name}</div>
-              <div>{<ToothCost cost={obj.cost}/>}</div>
+              <div>{<ToothCost teeth={obj.teeth}/>}</div>
               <div className='in-stock'>In Stock</div>
             </div>
           </div>

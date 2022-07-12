@@ -22,7 +22,7 @@ function Shop() {
   const [type, setType] = useState('All');
 
   // updates the cart state for the Cart component
-  function handleCart(qty, name, img, cost, id) {
+  function handleCart(qty, name, img, teeth, id) {
     if (qty > 0 || qty < 0) {
       for (let i = 0; i < cart.length; i += 1) {
         if (cart[i].name === name) {
@@ -39,7 +39,7 @@ function Shop() {
       obj.name = name;
       obj.qty = parseInt(qty);
       obj.img = img;
-      obj.cost = cost;
+      obj.teeth = teeth;
       obj.id = cartId;
       setCartID(x => x + 1);
       setCart(prev => [...prev, obj]);

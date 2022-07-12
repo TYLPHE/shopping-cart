@@ -35,6 +35,7 @@ function Header(
         shopping_cart
       </span>
       <Cart 
+        data-testid='cart'
         cartBool={cartBool} 
         cart={cart} 
         rmCartItem={rmCartItem}

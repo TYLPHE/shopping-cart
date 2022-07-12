@@ -49,7 +49,7 @@ function Card({ inv, handleCart }) {
               qty, 
               inv.name, 
               inv.img, 
-              inv.cost
+              inv.teeth
             )}
           }
         >
