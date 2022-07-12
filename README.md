@@ -3,7 +3,7 @@
 ![](https://github.com/TYLPHE/TYLPHE/blob/main/readmeAssets/shopping-cart.gif)
 
 ## Links
-- [Try Shopping Cart here! (in progress...)](https://tylphe.github.io/shopping-cart/)
+- [Try Shopping Cart here!](https://tylphe.github.io/shopping-cart/)
 
 - [Link to the Assignment](https://www.theodinproject.com/lessons/node-path-javascript-shopping-cart)
 
