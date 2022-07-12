@@ -34,7 +34,7 @@ My shopping cart depends on an array of objects:
 const [cart, setCart] = useState([]);
 ```
 
-Every time a user adds an item to the cart, I have a function that adds all the details of the card to the `cart` state like below (simplified for explanation):
+My Cart component did not update the subtotal when I tried to update the quantity. The handleCart() looked like this:
 ```javascript
 function handleCart (dataForCart) {
   const newCart = cart;
@@ -43,9 +43,9 @@ function handleCart (dataForCart) {
 }
 ```
 
-`handleCart()` did not update my Cart component! After some googling, I discovered this [very helpful link](https://stackoverflow.com/questions/597588/how-do-you-clone-an-array-of-objects-in-javascript).
+After some googling, I discovered this [very helpful link](https://stackoverflow.com/questions/597588/how-do-you-clone-an-array-of-objects-in-javascript).
 
-I learned that I can make a shallow copy and a deep copy of my cart array. In order for my Cart component to see state updates, I needed to create a deep copy. The below code worked for me:
+I learned that I can make a shallow copy or a deep copy of my cart array. In order for my Cart component to see state updates, I needed to create a deep copy. The below code worked for me:
 ```javascript
 function handleCart (dataForCart) {
   const newCart = structuredClone(cart);
@@ -54,7 +54,7 @@ function handleCart (dataForCart) {
 }
 ```
 
-adding `structuredClone()` to my cart state created a deep copy for my component! If you check the link, there's an older way to deep copy by using JSON.parse.
+adding `structuredClone()` to my cart state created a deep copy for my component. Then, when I updated the quantity, the subtotal updated too! If you check the very helpful link, there's an older way to deep copy by using JSON.parse.
 
 ### Filtering
 This was not a part of the assignment, but what's an online store without some filtering? Originally, I imagined filtering to work out like this:
