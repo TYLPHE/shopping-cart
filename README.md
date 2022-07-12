@@ -17,7 +17,7 @@
 Shopping Cart is an app that lets a user navigate between the homepage and shopping page by using routing via `react-router-dom`. The user should be able to add items to the cart and see its total value. Filter by category on the side or use the search function to find your favorite card.
 
 ## Challenges
-## Choosing the right data for the project
+### Choosing the right data for the project
 I decided to create a shop based on a hit horror-themed card game called [Inscryption](https://store.steampowered.com/app/1092790/Inscryption/). In order to make my shopping cart work the way I wanted, I decided to create my own data library.
 
 If you access my inventory.js file in the src folder, you will find an object that exports all the data needed for the website.
