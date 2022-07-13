@@ -142,3 +142,33 @@ function ShopWindow() {
 ```
 
 the if-statement for `search` determines that if the search state is not blank, then find all names that include anything in the search bar. I need to convert both the search and my inventory to lowercase so make the search case insensitive!
+
+## Testing Challenges
+### Running the most updated version
+I wanted to try the new [user-event](https://testing-library.com/docs/user-event/intro) library, which simulates user interactions. I learned that this was only available in version 14.
+
+In order to update my project, I ran this line within my project folder: `npm install @testing-library/user-event@latest`, which updated my package.json file to the newest versions.
+
+### History
+I installed this to figure out navigation testing because it was posted in an example here:
+https://testing-library.com/docs/example-react-router/
+
+I read that React Router prefers version 4, which meant I used the following in my terminal: `npm i history@4` to install an old version.  
+
+I'm not yet able to figure out how to utilize 'history' but I found a different solution on the next entry below, which is labeled 'Review the different Routers'.
+
+After some research, I learned that history is not for this project and may be more helpful once I implement some back-end logic. I uninstalled it from my project using `npm uninstall history`.
+
+### Review the different Routers
+I wanted to test if my home page navigated to the shop page when clicked. I had to understand the [differences between MemoryRouter, BrowserRouter, and HashRouter](https://learnwithparam.com/blog/different-types-of-router-in-react-router/). Examples I saw used MemoryRouter but this does not change the URL. I instead used BrowserRouter to read see the proper URL once clicked.
+
+Side note to self: The following are both the same.
+```javascript
+render(<Homepage />, {wrapper: BrowserRouter});
+
+render(
+  <BrowserRouter>
+    <Homepage />
+  </BrowserRouter>
+);
+```
