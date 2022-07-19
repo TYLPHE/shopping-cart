@@ -15,7 +15,7 @@ function Header(
 ) {
   return(
     <header>
-      <Link className='header-title' to='/shopping-cart/'>
+      <Link className='header-title' to='/shopping-cart/' data-testid='nav-test'>
         <div className='logo'>Shopping Cart by TYLPHE</div>
       </Link>
       <div className='searchbar'>
@@ -31,6 +31,7 @@ function Header(
       <span 
         className="material-symbols-outlined" 
         onClick={() => setCartBool(v => !v)}
+        data-testid='cart-icon'
       >
         shopping_cart
       </span>

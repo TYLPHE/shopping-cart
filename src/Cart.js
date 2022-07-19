@@ -87,7 +87,7 @@ function Cart({ cartBool, cart, rmCartItem, handleCart }) {
 
   if (cartBool) {
     return (
-      <div className='shopping-cart slide-in'>
+      <div className='shopping-cart slide-in' data-testid='cart'>
         <div>
           <span>Subtotal </span>
           <Total />
@@ -99,7 +99,7 @@ function Cart({ cartBool, cart, rmCartItem, handleCart }) {
           target='_blank' 
           rel='noreferrer'
         >
-          <button className='checkout'>
+          <button className='checkout' data-testid='checkout'>
             Proceed to checkout ({<TotalCards />})
           </button>
         </a>
@@ -108,7 +108,7 @@ function Cart({ cartBool, cart, rmCartItem, handleCart }) {
     );
   } else {
     return (
-      <div className='shopping-cart slide-out'></div>
+      <div className='shopping-cart slide-out' data-testid='cart'></div>
     );
   } 
 }
